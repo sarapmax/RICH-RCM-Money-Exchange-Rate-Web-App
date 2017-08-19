@@ -1,0 +1,47 @@
+#currency-exchange-rate-table {
+  width: 100%;
+}
+
+#currency-exchange-rate-table th {
+  font-family: "Athiti Medium";
+}
+
+#currency-exchange-rate-table tbody > tr:first-child {
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+
+#currency-exchange-rate-table .large-label {
+  font-size: 18px;
+  padding: 0 16px;
+}
+
+#currency-exchange-rate-table ul.currency-flag {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+#currency-exchange-rate-table ul.currency-flag li {
+  display: inline-block;
+}
+
+#currency-exchange-rate-table ul.currency-flag li .flag-icon {
+  font-size: 20px;
+}
+
+#currency-exchange-rate-table ul.currency-flag li:first-child {
+  margin-right: 4px;
+}
+
+.banknote-form {
+  padding: 10px 0;
+}
+
+.banknote-form:not(:last-child) {
+  border-bottom: 1px solid #e8eaea;
+}
+
+.last-updated {
+  margin-left: 10px;
+}
+

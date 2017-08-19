@@ -1,0 +1,49 @@
+@import '../palette';
+@import '../bootstrap/variables';
+
+#currency-exchange-rate-table {
+    width: 100%;
+
+    th {
+        font-family: $font-family-medium;
+    }
+
+    tbody > tr:first-child {
+        background-color: $white-grey;
+        cursor: pointer;
+    }
+
+    .large-label {
+        font-size: 18px;
+        padding: 0 16px;
+    }
+
+    ul.currency-flag {
+        padding: 0;
+        margin-bottom: 0;
+
+        li {
+            display: inline-block;
+
+            .flag-icon {
+                font-size: 20px;
+            }
+        }
+
+        li:first-child {
+            margin-right: 4px;
+        }
+    }
+}
+
+.banknote-form {
+    padding: 10px 0;
+
+    &:not(:last-child) {
+        border-bottom: 1px solid $light-grey;
+    }
+}
+
+.last-updated {
+    margin-left: 10px;
+}

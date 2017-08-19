@@ -15,10 +15,11 @@ class CreateCurrencyTable extends Migration
     {
         Schema::create('currency', function(Blueprint $table) {
             $table->increments('id');
+            $table->integer('country_id')->unsigned();
             $table->string('name');
             $table->string('unit');
-            $table->string('flag')->nullable();
-            $table->string('country');
+
+            $table->foreign('country_id')->references('id')->on('countries');
         });
     }
 
