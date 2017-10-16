@@ -11,7 +11,7 @@
                         <tr>
                             <th>Currency</th>
                             <th></th>
-                            <th><label class="label label-success large-label">Buying</label></th>
+                            <th><label class="label label-info large-label">Buying</label></th>
                             <th><label class="label label-danger large-label">Selling</label></th>
                         </tr>
                     </thead>
@@ -27,14 +27,14 @@
                                 <small>{{ c.country.name }}</small>
                             </th>
                             <th>{{ c.unit }}</th>
-                            <th><span class="tag is-success">Buying</span></th>
-                            <th><span class="tag is-danger">Selling</span></th>
+                            <th class="text-info">Buying</th>
+                            <th class="text-danger">Selling</th>
                         </tr>
                         <tr v-for="banknote in c.banknotes">
                             <td></td>
-                            <td>{{ banknote.name }}</td>
-                            <td>{{ banknote.buying }}</td>
-                            <td>{{ banknote.selling }}</td>
+                            <td><b>{{ banknote.name }}</b></td>
+                            <td class="buying-price"><b>{{ banknote.buying }}</b></td>
+                            <td class="selling-price"><b>{{ banknote.selling }}</b></td>
                         </tr>
                     </tbody>
                 </table>
@@ -139,7 +139,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 </template>
 

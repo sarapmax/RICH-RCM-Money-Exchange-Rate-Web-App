@@ -28140,7 +28140,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 
 
@@ -29997,8 +29996,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       staticClass: "currency-flag"
     }, [_c('li', [_c('span', {
       class: 'flag-icon flag-icon-' + c.country.flag.toLowerCase()
-    })]), _vm._v(" "), _c('li', [_vm._v("\n                                    " + _vm._s(c.name) + "\n                                ")])]), _vm._v(" "), _c('small', [_vm._v(_vm._s(c.country.name))])]), _vm._v(" "), _c('th', [_vm._v(_vm._s(c.unit))]), _vm._v(" "), _vm._m(1, true), _vm._v(" "), _vm._m(2, true)]), _vm._v(" "), _vm._l((c.banknotes), function(banknote) {
-      return _c('tr', [_c('td'), _vm._v(" "), _c('td', [_vm._v(_vm._s(banknote.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(banknote.buying))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(banknote.selling))])])
+    })]), _vm._v(" "), _c('li', [_vm._v("\n                                    " + _vm._s(c.name) + "\n                                ")])]), _vm._v(" "), _c('small', [_vm._v(_vm._s(c.country.name))])]), _vm._v(" "), _c('th', [_vm._v(_vm._s(c.unit))]), _vm._v(" "), _c('th', {
+      staticClass: "text-info"
+    }, [_vm._v("Buying")]), _vm._v(" "), _c('th', {
+      staticClass: "text-danger"
+    }, [_vm._v("Selling")])]), _vm._v(" "), _vm._l((c.banknotes), function(banknote) {
+      return _c('tr', [_c('td'), _vm._v(" "), _c('td', [_c('b', [_vm._v(_vm._s(banknote.name))])]), _vm._v(" "), _c('td', {
+        staticClass: "buying-price"
+      }, [_c('b', [_vm._v(_vm._s(banknote.buying))])]), _vm._v(" "), _c('td', {
+        staticClass: "selling-price"
+      }, [_c('b', [_vm._v(_vm._s(banknote.selling))])])])
     })], 2)
   })], 2), _vm._v(" "), _c('div', [_c('hr'), _vm._v(" "), (!_vm.guest) ? _c('button', {
     staticClass: "btn btn-primary btn-block bottom-buffer-lg",
@@ -30021,7 +30028,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('div', {
     staticClass: "modal-content"
-  }, [_vm._m(3), _vm._v(" "), _c('form', {
+  }, [_vm._m(1), _vm._v(" "), _c('form', {
     attrs: {
       "id": "currency-form"
     },
@@ -30211,18 +30218,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Remove")]) : _vm._e()])])])])])], 1)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('thead', [_c('tr', [_c('th', [_vm._v("Currency")]), _vm._v(" "), _c('th'), _vm._v(" "), _c('th', [_c('label', {
-    staticClass: "label label-success large-label"
+    staticClass: "label label-info large-label"
   }, [_vm._v("Buying")])]), _vm._v(" "), _c('th', [_c('label', {
     staticClass: "label label-danger large-label"
   }, [_vm._v("Selling")])])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('th', [_c('span', {
-    staticClass: "tag is-success"
-  }, [_vm._v("Buying")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('th', [_c('span', {
-    staticClass: "tag is-danger"
-  }, [_vm._v("Selling")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "modal-header"

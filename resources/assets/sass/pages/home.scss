@@ -1,6 +1,10 @@
 @import '../palette';
 @import '../bootstrap/variables';
 
+body {
+    background-color: $pale-yellow;
+}
+
 #currency-exchange-rate-table {
     width: 100%;
 
@@ -8,9 +12,37 @@
         font-family: $font-family-medium;
     }
 
-    tbody > tr:first-child {
-        background-color: $white-grey;
-        cursor: pointer;
+    thead {
+        tr {
+            th {
+                border-bottom: 0;
+            }
+        }
+    }
+
+    tbody {
+        tr:first-child {
+            background-color: $pale-yellow;
+            cursor: pointer;
+        }
+
+        tr {
+            th {
+                border-top: 2px solid $primary-color;
+            }
+
+            td {
+                border-top: 1px solid $more-pale-yellow;
+            }
+
+            td.buying-price {
+                color: $info-color;
+            }
+
+            td.selling-price {
+                color: $danger-color;
+            }
+        }
     }
 
     .large-label {
@@ -22,16 +54,16 @@
         padding: 0;
         margin-bottom: 0;
 
+        li:first-child {
+            margin-right: 4px;
+        }
+
         li {
             display: inline-block;
 
             .flag-icon {
                 font-size: 20px;
             }
-        }
-
-        li:first-child {
-            margin-right: 4px;
         }
     }
 }
@@ -42,8 +74,4 @@
     &:not(:last-child) {
         border-bottom: 1px solid $light-grey;
     }
-}
-
-.last-updated {
-    margin-left: 10px;
 }

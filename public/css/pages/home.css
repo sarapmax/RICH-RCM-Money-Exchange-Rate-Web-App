@@ -1,3 +1,7 @@
+body {
+  background-color: #eadca8;
+}
+
 #currency-exchange-rate-table {
   width: 100%;
 }
@@ -6,9 +10,29 @@
   font-family: "Athiti Medium";
 }
 
-#currency-exchange-rate-table tbody > tr:first-child {
-  background-color: #f7f7f7;
+#currency-exchange-rate-table thead tr th {
+  border-bottom: 0;
+}
+
+#currency-exchange-rate-table tbody tr:first-child {
+  background-color: #eadca8;
   cursor: pointer;
+}
+
+#currency-exchange-rate-table tbody tr th {
+  border-top: 2px solid #edbc0e;
+}
+
+#currency-exchange-rate-table tbody tr td {
+  border-top: 1px solid #ede4c4;
+}
+
+#currency-exchange-rate-table tbody tr td.buying-price {
+  color: #063d94;
+}
+
+#currency-exchange-rate-table tbody tr td.selling-price {
+  color: #d20931;
 }
 
 #currency-exchange-rate-table .large-label {
@@ -21,6 +45,10 @@
   margin-bottom: 0;
 }
 
+#currency-exchange-rate-table ul.currency-flag li:first-child {
+  margin-right: 4px;
+}
+
 #currency-exchange-rate-table ul.currency-flag li {
   display: inline-block;
 }
@@ -29,19 +57,11 @@
   font-size: 20px;
 }
 
-#currency-exchange-rate-table ul.currency-flag li:first-child {
-  margin-right: 4px;
-}
-
 .banknote-form {
   padding: 10px 0;
 }
 
 .banknote-form:not(:last-child) {
   border-bottom: 1px solid #e8eaea;
-}
-
-.last-updated {
-  margin-left: 10px;
 }
 

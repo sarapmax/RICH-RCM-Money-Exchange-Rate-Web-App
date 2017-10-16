@@ -54,9 +54,9 @@
             </div>
         </div>
     </nav>
-    {{--<div class="container-fluid">--}}
+    <div class="container-fluid">
         @yield('content')
-    {{--</div>--}}
+    </div>
 
     <div class="page-loading"></div>
 

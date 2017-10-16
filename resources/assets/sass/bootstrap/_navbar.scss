@@ -68,11 +68,11 @@
     border-color: $navbar-gold-border;
 
     .navbar-brand {
-        color: $navbar-default-brand-color;
+        color: $info-color;
         &:hover,
         &:focus {
-            color: $navbar-default-brand-hover-color;
-            background-color: $navbar-default-brand-hover-bg;
+            color: $info-color;
+            background-color: $primary-color;
         }
     }
 
