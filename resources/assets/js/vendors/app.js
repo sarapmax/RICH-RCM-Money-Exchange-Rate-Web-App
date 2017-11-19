@@ -13,7 +13,7 @@ window.Vue = Vue
 
 // Set pusher key for local and production.
 if(window.location.hostname == 'richc-m.com') {
-    return pusherKey = '1b1a547035cd3a9292f1'
+    return pusherKey = 'b84b59d73bf72a926560'
 } else {
     return pusherKey = '3176398c2181a23ceb7f'
 }
