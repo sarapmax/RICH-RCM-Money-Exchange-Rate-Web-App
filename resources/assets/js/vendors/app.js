@@ -12,7 +12,7 @@ import moment from 'moment'
 window.Vue = Vue
 
 // Set pusher key for local and production.
-if(window.location.hostname == 'rich-c.com') {
+if(window.location.hostname == 'richc-m.com') {
     return pusherKey = '1b1a547035cd3a9292f1'
 } else {
     return pusherKey = '3176398c2181a23ceb7f'
