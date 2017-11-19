@@ -27154,9 +27154,9 @@ window._ = __webpack_require__(165);
  */
 
 try {
-  window.$ = window.jQuery = __webpack_require__(166);
+    window.$ = window.jQuery = __webpack_require__(166);
 
-  __webpack_require__(167);
+    __webpack_require__(167);
 } catch (e) {}
 
 /**
@@ -27169,11 +27169,20 @@ try {
 
 window.Pusher = __webpack_require__(169);
 
+// Set pusher key for local and production.
+var pusherKey = '';
+
+if (window.location.hostname == 'richc-m.com') {
+    pusherKey = 'b84b59d73bf72a926560';
+} else {
+    pusherKey = '3176398c2181a23ceb7f';
+}
+
 window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
-  broadcaster: 'pusher',
-  key: '3176398c2181a23ceb7f',
-  cluster: 'ap1',
-  encrypted: true
+    broadcaster: 'pusher',
+    key: pusherKey,
+    cluster: 'ap1',
+    encrypted: true
 });
 
 /***/ }),

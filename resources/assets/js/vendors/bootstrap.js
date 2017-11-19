@@ -23,6 +23,15 @@ import Echo from 'laravel-echo'
 
 window.Pusher = require('pusher-js');
 
+// Set pusher key for local and production.
+let pusherKey = ''
+
+if(window.location.hostname == 'richc-m.com') {
+    pusherKey = 'b84b59d73bf72a926560'
+} else {
+    pusherKey = '3176398c2181a23ceb7f'
+}
+
 window.Echo = new Echo({
     broadcaster: 'pusher',
     key: pusherKey,
