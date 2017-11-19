@@ -6,7 +6,7 @@ Route::group([
 ], function() {
     Route::get('/', 'HomeController@showHomePage')->name('home');
     Route::get('currency', 'HomeController@getCurrencyWithBanknotes')->name('currency');
-    Route::get('currency-last-updated', 'Homecontroller@getCurrencyLastUpdated');
+    Route::get('currency-last-updated', 'HomeController@getCurrencyLastUpdated');
 });
 
 // Authentication Routes.
