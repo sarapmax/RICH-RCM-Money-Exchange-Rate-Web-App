@@ -65,3 +65,7 @@ body {
   border-bottom: 1px solid #e8eaea;
 }
 
+.flag-icon-euro {
+  background-image: url(/images/euro.png?467187db94a0e2304f60f40da521aa32);
+}
+

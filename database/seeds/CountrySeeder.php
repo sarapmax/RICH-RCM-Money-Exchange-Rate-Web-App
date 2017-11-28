@@ -259,6 +259,7 @@ class CountrySeeder extends Seeder
             ['name' => "Yemen", 'flag' => 'YE'],
             ['name' => "Zambia", 'flag' => 'ZM'],
             ['name' => "Zimbabwe", 'flag' => 'ZW'],
+            ['name' => "European Union", 'flag' => 'EURO'],
         ];
 
         foreach ($rows as $row) {
